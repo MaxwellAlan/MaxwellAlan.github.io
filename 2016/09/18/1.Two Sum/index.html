@@ -5,28 +5,22 @@
   
   <title>AlanMaxwell</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="测试标签（空格分隔）： 未分类
+  <meta name="description" content="1.Two Sum标签（空格分隔）： LeetCode
 
-一级二级三级四级五级
-列表1
-列表2-列表2.1-列表2.2">
+QuestionGiven an array of integers, return indices of the two numbers such that they add up to a specific target.You may assume that each input would have exactly one solu">
 <meta property="og:type" content="article">
 <meta property="og:title" content="AlanMaxwell">
-<meta property="og:url" content="http://yoursite.com/2016/09/14/testMyBlog/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/09/18/1.Two Sum/index.html">
 <meta property="og:site_name" content="AlanMaxwell">
-<meta property="og:description" content="测试标签（空格分隔）： 未分类
+<meta property="og:description" content="1.Two Sum标签（空格分隔）： LeetCode
 
-一级二级三级四级五级
-列表1
-列表2-列表2.1-列表2.2">
-<meta property="og:updated_time" content="2016-09-14T10:24:09.854Z">
+QuestionGiven an array of integers, return indices of the two numbers such that they add up to a specific target.You may assume that each input would have exactly one solu">
+<meta property="og:updated_time" content="2016-09-18T02:55:39.608Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="AlanMaxwell">
-<meta name="twitter:description" content="测试标签（空格分隔）： 未分类
+<meta name="twitter:description" content="1.Two Sum标签（空格分隔）： LeetCode
 
-一级二级三级四级五级
-列表1
-列表2-列表2.1-列表2.2">
+QuestionGiven an array of integers, return indices of the two numbers such that they add up to a specific target.You may assume that each input would have exactly one solu">
   
     <link rel="alternate" href="/atom.xml" title="AlanMaxwell" type="application/atom+xml">
   
@@ -75,10 +69,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-testMyBlog" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-1.Two Sum" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2016/09/14/testMyBlog/" class="article-date">
-  <time datetime="2016-09-14T10:23:37.262Z" itemprop="datePublished">2016-09-14</time>
+    <a href="/2016/09/18/1.Two Sum/" class="article-date">
+  <time datetime="2016-09-18T03:00:09.572Z" itemprop="datePublished">2016-09-18</time>
 </a>
     
   </div>
@@ -87,17 +81,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p>标签（空格分隔）： 未分类</p>
+        <h1 id="1-Two-Sum"><a href="#1-Two-Sum" class="headerlink" title="1.Two Sum"></a>1.Two Sum</h1><p>标签（空格分隔）： LeetCode</p>
 <hr>
-<h1 id="一级"><a href="#一级" class="headerlink" title="一级"></a>一级</h1><h2 id="二级"><a href="#二级" class="headerlink" title="二级"></a>二级</h2><h3 id="三级"><a href="#三级" class="headerlink" title="三级"></a>三级</h3><h4 id="四级"><a href="#四级" class="headerlink" title="四级"></a>四级</h4><h5 id="五级"><a href="#五级" class="headerlink" title="五级"></a>五级</h5><ul>
-<li>列表1</li>
-<li>列表2<br>-列表2.1<br>-列表2.2</li>
-</ul>
+<h1 id="Question"><a href="#Question" class="headerlink" title="Question"></a>Question</h1><h2 id="Given-an-array-of-integers-return-indices-of-the-two-numbers-such-that-they-add-up-to-a-specific-target"><a href="#Given-an-array-of-integers-return-indices-of-the-two-numbers-such-that-they-add-up-to-a-specific-target" class="headerlink" title="Given an array of integers, return indices of the two numbers such that they add up to a specific target."></a>Given an array of integers, return indices of the two numbers such that they add up to a specific target.</h2><p>You may assume that each input would have exactly one solution.</p>
+<p>Example:<br>Given nums = [2, 7, 11, 15], target = 9,</p>
+<p>Because nums[0] + nums[1] = 2 + 7 = 9,<br>return [0, 1].</p>
+<h1 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">public class Solution &#123;</div><div class="line">	public int[] twoSum(int[] nums, int target) &#123;</div><div class="line">        int index0=0;</div><div class="line">        int index1=0;</div><div class="line">        int[] result=new int[2];</div><div class="line">        for(index0=0;index0&lt;nums.length;index0++)&#123;</div><div class="line">        	for(index1=index0+1;index1&lt;nums.length;index1++)&#123;</div><div class="line">        		if(nums[index0]+nums[index1]==target)&#123;</div><div class="line">        			result[0]=index0;</div><div class="line">        			result[1]=index1;</div><div class="line">        		&#125;</div><div class="line">        	&#125;</div><div class="line">        &#125;</div><div class="line">        return result;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/09/14/testMyBlog/" data-id="cit2qvld700018cqeyi78jtf3" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2016/09/18/1.Two Sum/" data-id="cit81cat100020wqeqhbhkfuv" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -146,7 +140,7 @@
       <ul>
         
           <li>
-            <a href="/2016/09/14/testMyBlog/">(no title)</a>
+            <a href="/2016/09/18/1.Two Sum/">(no title)</a>
           </li>
         
           <li>
